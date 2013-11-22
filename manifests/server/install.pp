@@ -8,6 +8,6 @@ class ssh::server::install {
     owner  => 'root',
     group  => 'root',
     mode   => '0755',
-    source => "puppet:///modules/${module_name}/${init_script_name}"
+    source => "puppet:///modules/${module_name}/${ssh::params::init_script_name}",
   }
 }
